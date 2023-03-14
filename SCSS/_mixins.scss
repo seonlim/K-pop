@@ -1,0 +1,16 @@
+@mixin displayColumn ($rGap: 0vh) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $rGap;    
+}
+
+@mixin displayRow ($cGap: 0vh) {
+    display: flex;
+    flex-direction: row;
+    row-gap: $cGap;    
+}
+
+@mixin displayCenter {
+    justify-content: center;
+    align-items: center;
+}

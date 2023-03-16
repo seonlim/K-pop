@@ -74,4 +74,30 @@
         }
         
     }
+
+    footer {
+        border-top: 3px solid $mainBolor ;
+        background-color: $secondColor;
+        height: 20vh;
+        @include displayCenter;
+        flex-direction: column;
+        justify-content:space-around;
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            background-color: $mainColor;
+            padding: 2vh;
+            color: $secondColor;
+            font-size: 18px;
+            font-weight: 600;
+            border: 3px solid $mainBolor;
+            border-radius: 50px;
+        }
+    }
 }

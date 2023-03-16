@@ -118,6 +118,11 @@ img {
     flex-direction: column;
     row-gap: 3vh;
   }
+  .fandom .wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
   .fandom aside {
     display: flex;
     flex-direction: column;
@@ -258,5 +263,56 @@ img {
     flex-direction: row;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
+  }
+}
+@media (min-width: 1000px) {
+  .artist-main h6 {
+    font-size: 30px;
+  }
+  .artist-main h2 {
+    font-size: 48px;
+  }
+  .artist-main p {
+    font-size: 18px;
+  }
+  /*===================
+  concept
+  ====================*/
+  .concept aside {
+    -moz-column-gap: 4.5vh;
+         column-gap: 4.5vh;
+  }
+  .concept figure {
+    width: 22%;
+  }
+  /*===================
+   fashion
+  ====================*/
+  .fashion aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    padding: 5% 0;
+  }
+  .fashion figure {
+    width: 48%;
+  }
+  .fashion img {
+    height: 20vh;
+  }
+  /*===================
+   fandom
+  ====================*/
+  .fandom .wrap {
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .fandom .left {
+    width: 40%;
+  }
+  .fandom .right {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

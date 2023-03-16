@@ -90,6 +90,9 @@
     .left{
       @include displayColumn(3vh);
     }
+    .wrap{
+      @include displayColumn(5vh);
+    }
     aside{
       @include displayColumn(5vh);
     }

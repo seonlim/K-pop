@@ -1,3 +1,59 @@
 @media (min-width:$desktopVersion){
 
+  .artist-main{
+    h6{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 48px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+  /*===================
+  concept
+  ====================*/
+  .concept{
+    aside{
+      column-gap: 4.5vh;
+    }
+    figure{
+      width: 22%;
+    }
+  }
+/*===================
+ fashion
+====================*/
+.fashion{
+  aside{
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3vh;
+    padding: 5% 0;
+  }
+  figure{
+    width: 48%;
+  }
+  img{
+    height: 20vh;
+  }
+}
+/*===================
+ fandom
+====================*/
+.fandom{
+  .wrap{
+    flex-direction: row;
+    column-gap: 3vh;
+  }
+  .left{
+    width: 40%;
+  }
+  .right{
+    width: 60%;
+  }
+}
+
+
 }

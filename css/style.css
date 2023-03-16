@@ -34,14 +34,6 @@ img {
     flex-direction: column;
     row-gap: 5vh;
   }
-  .artist-main .group,
-  .artist-main .concept,
-  .artist-main .fashion,
-  .artist-main .fandom,
-  .artist-main .star {
-    display: flex;
-    justify-content: center;
-  }
   .artist-main h6 {
     font-size: 14px;
     text-transform: uppercase;
@@ -51,6 +43,14 @@ img {
     color: #2d3436;
     width: 80%;
     text-transform: capitalize;
+  }
+  .group,
+  .concept,
+  .fashion,
+  .fandom,
+  .star {
+    display: flex;
+    justify-content: center;
   }
   /*===================
   group
@@ -77,19 +77,19 @@ img {
     padding: 2vh 0;
   }
   .concept img {
-    position: relative;
+    width: 90%;
+    height: 30vh;
   }
-  .concept img,
   .concept figcaption {
     width: 90%;
+    text-align: center;
   }
   .concept h4 {
-    position: absolute;
     background-color: white;
-    width: 76%;
     text-transform: uppercase;
     text-align: center;
     padding: 2%;
+    width: 15vh;
   }
   /*===================
   fashion
@@ -139,6 +139,7 @@ img {
   }
   .fandom img {
     width: 90%;
+    height: 30vh;
     border-radius: 5px;
     border: 2px solid whitesmoke;
   }
@@ -186,5 +187,76 @@ img {
   .star h3 {
     text-transform: capitalize;
     font-size: 24px;
+  }
+}
+@media (min-width: 600px) {
+  .artist-main h6 {
+    font-size: 24px;
+  }
+  .artist-main h2 {
+    font-size: 38px;
+  }
+  .artist-main p {
+    font-size: 20px;
+  }
+  /*===================
+  concept
+  ====================*/
+  .concept aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .concept figure {
+    width: 47%;
+  }
+  .concept img {
+    height: 20vh;
+  }
+  /*===================
+   fashion
+  ====================*/
+  .fashion figure {
+    display: flex;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .fashion img {
+    margin: 0;
+  }
+  .fashion h4 {
+    font-size: 20px;
+  }
+  .fashion figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+  }
+  /*===================
+   fandom
+  ====================*/
+  .fandom aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .fandom figure {
+    width: 47%;
+  }
+  .fandom img {
+    height: 20vh;
+  }
+  /*===================
+   star
+  ====================*/
+  .star h2 {
+    width: 100%;
+  }
+  .star .container > section {
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
   }
 }/*# sourceMappingURL=style.css.map */

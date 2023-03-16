@@ -7,14 +7,6 @@
       width: 90%;
       @include displayColumn(5vh);
     }
-    .group,
-    .concept,
-    .fashion,
-    .fandom,
-    .star{
-      display: flex;
-      justify-content: center;
-    }
     h6{
       font-size: 14px;
       text-transform: uppercase;
@@ -26,6 +18,14 @@
       text-transform: capitalize;
     }
   }
+  .group,
+  .concept,
+  .fashion,
+  .fandom,
+  .star{
+    display: flex;
+    justify-content: center;
+    }
   /*===================
   group
   ====================*/
@@ -46,21 +46,22 @@
       align-items: center;
       padding: 2vh 0;
     }
-    img{
-      position: relative;
-    }
 
-    img,
+    img{
+      width: 90%;
+      height: 30vh;
+    }
     figcaption{
       width: 90%;
+      text-align: center;
     }
+
     h4{
-      position: absolute;
       background-color: white;
-      width: 76%;
       text-transform: uppercase;
       text-align: center;
       padding: 2%;
+      width: 15vh
     }
   }
 
@@ -72,7 +73,6 @@
     aside{
       @include displayColumn(5vh);
     }
-
     img{
       width: 25vh;
       border-radius: 5px;
@@ -107,6 +107,7 @@
     }
     img{
       width: 90%;
+      height: 30vh;
       border-radius: 5px;
       border: 2px solid whitesmoke;
     }

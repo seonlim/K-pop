@@ -1,3 +1,265 @@
 @media (min-width:$mobileVersion){
+    /** HEADER **/
+    .header-music {
+        li:last-child {
+            a {
+                color: $mainBolor; 
+                font-size: 34px;
+            }
+
+        }
+    }
+
+    header {
+        background-image: url(/img/background-curves.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        width: 100%;
+
+        section {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(254, 202, 87, .8);
+            display: flex;
+            @include displayCenter;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            height: 70%;
+        }
+
+        li {
+            display: flex;
+        }
+        
+        a {
+            color: $secondColor;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    /** NAV **/
+    details {
+        display: none;
+    }
+
+    nav {
+        background-color: $secondColor;
+        border-top:3px solid $mainBolor ;
+        border-bottom:3px solid $mainBolor ;
+        height: 6vh;
+
+        ul {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+        }
+
+        a {
+            width: 100%;
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+            @include displayCenter;
+        }
+    }
+
+    /** MAIN **/
+    main {
+        padding: 8vh 0vh;
+        @include displayColumn(5vh);
+        
+        > section {
+            @include displayColumn(5vh);
+            article {
+                @include displayColumn;
+                align-items: center
+            }
+
+            section {
+                @include displayColumn(3vh);
+                align-items: center;
+            }
+            
+        }
+    }
+
+    .row {
+        article {
+            h2 {
+                font-size: 34px;
+                color: $secondColor;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 18px;
+                color: $mainBolor;
+                font-weight: 600;
+            }
+        }
+    }
+
+    /** CHART **/
+    table {
+        font-size: 16px;
+        border: 1px solid $mainBolor;
+        border-collapse: collapse;
+        width: 90%;
+    }
+
+    td, th {
+        border: 1px solid $secondColor;
+        color: $mainBolor;
+        padding: 1vh;
+    }
+
+    /** NEW ALBUM**/
+    .new-album {
+        figure {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    /** MUSIC VIDEO**/
+    .music-video {
+        figure {
+            @include displayColumn(2vh);
+            width: 90%;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+        }
+        small {
+            color: $mainBolor;
+        } 
+    }
+
+    /** PLAY LIST**/
+    .play-list {
+        > section {
+            @include displayRow(1vh);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        figure {
+            width: 40%;
+            border: 1px solid darkgray;
+        }
+        figcaption {
+            padding: 5%;
+        }
+        img {
+            width: 100%;
+        }
+        span {
+            background-color: $secondColor;
+            border-radius: 10%;
+            padding: 1%;
+            font-size: 10px;
+            color: gainsboro;
+        }
+
+        ul {
+            @include displayRow(5vh);
+            flex-wrap: wrap;
+            justify-content: center;
     
+        }
+
+        li {
+            display: flex;
+            width: 30%;
+        }
+
+        a {
+            background-color: $mainColor;
+            color: $mainBolor;
+            border-radius: 20%;
+            font-size: 18px;
+            padding: 3%;
+        }
+        
+    }
+
+    /** RECOMMENDATION **/
+    .recommendation {
+        height: 50vh;
+        @include displayCenter;
+        border: 5px solid $mainColor;
+        > article {
+            width: 90%
+        }
+        aside {
+            @include displayRow(1vh);
+            
+        }
+    }
+
+    form {
+        @include displayColumn(2vh);
+        align-items: center;
+    }
+
+    input {
+        padding: 2%;
+        border: 1px solid $secondColor;
+        width: 96%;
+    }
+
+    [type="submit"] {
+        background-color: $secondColor;
+        color: $mainColor;
+        padding: 3%;
+        border: none;
+        border-radius: 5%;
+        font-size: 16px;
+        width: 40%;
+      }
+
+    /** FOOTER **/
+    footer {
+        border-top: 3px solid $mainBolor ;
+        background-color: $secondColor;
+        height: 20vh;
+        @include displayCenter;
+        flex-direction: column;
+        justify-content:space-around;
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            background-color: $mainColor;
+            padding: 2vh;
+            color: $secondColor;
+            font-size: 18px;
+            font-weight: 600;
+            border: 3px solid $mainBolor;
+            border-radius: 50px;
+        }
+    }
 }

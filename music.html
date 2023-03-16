@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SM</title>
+    <title>Music-Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- HEADER  -->
-    <header id="top">
+    <header class="header-music" id="top">
         <section>
             <ul>
                 <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
                 <li><a href="artists.html">ARTISTS</a></li>
                 <li><a href="music.html">MUSIC</a></li>
-                <li><a href="history.html">NEWS</a></li>
             </ul>
         </section>
     </header>
     <!-- header ends -->
-    <!-- nav -->
+    <!-- NAV -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#history">History</a></li>
             <li><a href="#artists">Artists</a></li>
             <li><a href="#music">Music</a></li>
-            <li><a href="#history">News</a></li>
         </ul>
         <details>
             <summary class="fa-solid fa-bars"></summary>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="#history">History</a></li>
                 <li><a href="#artists">Artists</a></li>
                 <li><a href="#music">Music</a></li>
             </ul>
@@ -41,10 +41,170 @@
     </nav>
     <!-- nav ends -->
     <!-- MAIN -->
-    <main>
-
+    <main class="music">
+        <section class="chart" id="chart">
+            <article>
+                <h2>Timeline chart</h2>
+            </article>
+            <section>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Year</th>
+                        <th>Group/Singer</th>
+                        <th>Album/Song</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1996</td>
+                        <td>H.O.T</td>
+                        <td>1st album - We Hate All Kinds of Violence</td>
+                      </tr>
+                      <tr>
+                        <td>1998</td>
+                        <td>g.o.d</td>
+                        <td>1st album - To Mother</td>
+                      </tr>
+                      <tr>
+                        <td>2005</td>
+                        <td>Super Junior</td>
+                        <td>1st album - SuperJunior05</td>
+                      </tr>
+                      <tr>
+                        <td>2009</td>
+                        <td>2NE1</td>
+                        <td>1st mini album - 2NE1</td>
+                      </tr>
+                      <tr>
+                        <td>2012</td>
+                        <td>BTS</td>
+                        <td>2nd single album - Skool Luv Affair</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>EXO</td>
+                        <td>2nd album - Exodus</td>
+                      </tr>
+                      <tr>
+                        <td>2018</td>
+                        <td>Blackpink</td>
+                        <td>Square Up</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+        </section>
+        <section class="new-album" id="new-album">
+            <article>
+                <h2>New Album</h2>
+            </article>
+            <section>
+                <figure>
+                    <img src="/img/music-img/album-02.jpeg" alt="Exo">
+                    <img src="/img/music-img/album-02.jpeg" alt="Exo">
+                    <img src="/img/music-img/album-02.jpeg" alt="Exo">
+                    <img src="/img/music-img/album-02.jpeg" alt="Exo">
+                </figure>
+            </section>
+        </section>
+        <section class="music-video" id="music-video">
+            <article>
+                <h2>Music Videos</h2> 
+            </article>
+            <section>
+                <figure>
+                    <a href="https://www.youtube.com/watch?v=Ut1OzEVUiM4" target="_blank"><img src="/img/music-img/redvelvet.png" alt="Redvelvet"></a>
+                    <figcaption>
+                        <h4>
+                            <span>RED VELVET</span> |
+                            <small>2023-03-06</small>
+                        </h4>
+                        <p>
+                            Birthday M/V
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.youtube.com/watch?v=w4cTYnOPdNk" target="_blank"><img src="/img/music-img/twice.png" alt="Twice"></a>
+                    <figcaption>
+                        <h4>
+                            <span>TWICE</span> |
+                            <small>2023-03-10</small>
+                        </h4>
+                        <p>
+                            SCIENTIST M/V
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.youtube.com/watch?v=F0B7HDiY-10" target="_blank"><img src="/img/music-img/ive.png" alt="Blackpink"></a>
+                    <figcaption>
+                        <h4>
+                            <span>IVE</span> |
+                            <small>2022-08-22</small>
+                        </h4>
+                        <p>
+                            After Like M/V
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+        <section class="play-list" id="play-list">
+            <article>
+                <h2>Play list</h2>
+            </article>
+            <section> <!-- row -->
+                <figure>
+                    <img src="/img/music-img/cozy.jpg" alt="Cover-01">
+                    <figcaption>
+                        <p>title of playlist</p>
+                        <h5>
+                            <i class="fa-regular fa-heart"></i>
+                            <small>23 songs</small>
+                        </h5>
+                        <aside>
+                            <span>#2023</span>
+                            <span>#kpop</span>
+                        </aside>
+                    </figcaption>
+                </figure>
+            </section>
+            <ul>
+                <li><a href="#">#Chill</a></li>
+                <li><a href="#">#Dance</a></li>
+                <li><a href="#">#Upbeat</a></li>
+                <li><a href="#">#Cozy</a></li>
+                <li><a href="#">#Romance</a></li>
+                <li><a href="#">#Blackpink</a></li>
+            </ul>
+        </section>
+        <section class="recommendation" id="recommendation">
+            <article>
+                <h2>Recommendation song</h2>
+                <p>Please recommendation about Spring song</p>
+            </article>
+            <section>
+                <form action="#">
+                    <aside>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    </aside>
+                    <aside>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email">
+                    </aside>
+                    <aside>
+                        <label for="message">Recommendation song:</label>
+                        <textarea name="message" id="message"  placeholder="Message"></textarea>
+                    </aside>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </section>
     </main>
-   <!-- footer -->
+   <!-- FOOTER -->
     <footer>
         <p>
             Copyright &copy; CompanyName

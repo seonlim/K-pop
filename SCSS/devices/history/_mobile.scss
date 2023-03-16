@@ -75,6 +75,153 @@
         
     }
 
+    // body {
+    //     background-color: gainsboro;
+    // }
+
+    main {
+        padding: 8vh 0;
+        @include displayColumn(5vh);
+        
+        section {
+            @include displayColumn(5vh);
+            article {
+                @include displayColumn;
+                align-items: center
+            }
+
+            section {
+                @include displayColumn(3vh);
+                align-items: center;
+            }
+        }
+
+    }
+
+    .row {
+        article {
+            h2 {
+                font-size: 34px;
+                color: $secondColor;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 18px;
+                color: $mainBolor;
+                font-weight: 600;
+            }
+        }
+    }
+
+    figure {
+        @include displayColumn(3vh);
+        align-items: center;
+    }
+
+    .aboutHistory {
+        
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            width: 90%;
+        }
+    }
+
+    .timeline {
+
+        aside {
+            display: flex;
+            width: 90%;
+            align-items: center;
+            column-gap: 2vh;
+
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+        }
+
+        span {
+            text-align: center;
+        }
+    }
+
+    .news {
+        
+        figure {
+            width: 100%;
+            @include displayColumn(3vh);
+            align-items: center;
+            border-top: 2px solid $mainBolor;
+        }
+
+        figcaption {
+            @include displayColumn(2vh);
+            width: 90%;
+            padding-bottom: 1vh;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            background: $mainColor;
+            color: $secondColor;
+            padding: 1vh;
+            width: 15vh;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid $mainBolor;
+            border-radius: 50px;
+        }
+    }
+
+    .events {
+        > section {
+
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figure {
+            width: 90%;
+            background-color: gainsboro;
+        }
+
+        figcaption {
+            width: 90%;
+            @include displayColumn(1vh);
+            padding-bottom: 1vh;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $mainBolor;
+        }
+
+
+        a {
+            background: $secondColor;
+            color: $mainColor;
+            padding: 1vh;
+            width: 17vh;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid $mainBolor;
+            border-radius: 50px;
+        }
+
+    }
+
     footer {
         border-top: 3px solid $mainBolor ;
         background-color: $secondColor;

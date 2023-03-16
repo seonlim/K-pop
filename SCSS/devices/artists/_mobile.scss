@@ -69,6 +69,7 @@
   fashion
   ====================*/
   .fashion{
+    padding: 10% 0;
 
     aside{
       @include displayColumn(5vh);
@@ -137,6 +138,7 @@
   star
   ====================*/
   .star{
+    padding-top:10% ;
     h2{
       width: 50%;
     }

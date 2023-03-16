@@ -94,6 +94,9 @@ img {
   /*===================
   fashion
   ====================*/
+  .fashion {
+    padding: 10% 0;
+  }
   .fashion aside {
     display: flex;
     flex-direction: column;
@@ -168,6 +171,9 @@ img {
   /*===================
   star
   ====================*/
+  .star {
+    padding-top: 10%;
+  }
   .star h2 {
     width: 50%;
   }
@@ -247,11 +253,41 @@ img {
     -moz-column-gap: 3vh;
          column-gap: 3vh;
   }
+  .fandom h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
   .fandom figure {
     width: 47%;
+    height: 20vh;
+    position: relative;
+  }
+  .fandom figure:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fandom figure:hover h5 {
+    display: none;
+  }
+  .fandom figure:hover figcaption {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .fandom figure:hover img {
+    display: none;
   }
   .fandom img {
     height: 20vh;
+  }
+  .fandom figcaption {
+    display: none;
   }
   /*===================
    star
@@ -299,7 +335,7 @@ img {
     width: 48%;
   }
   .fashion img {
-    height: 20vh;
+    height: 23vh;
   }
   /*===================
    fandom

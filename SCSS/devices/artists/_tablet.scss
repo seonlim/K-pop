@@ -55,11 +55,38 @@
     flex-wrap: wrap;
     column-gap: 3vh;
   }
+  h4{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
   figure{
     width: 47%;
+    height: 20vh;
+    position: relative;
+    &:hover{
+      @include displayCenter;
+    }
+    &:hover h5{
+      display: none;
+    }
+    &:hover figcaption{
+      position: absolute;
+      width: 90%;
+      height: 100%;
+      @include displayColumn(1vh);
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover img{
+      display: none;
+    }
+
   }
   img{
     height: 20vh;
+  }
+  figcaption{
+    display: none;
   }
 }
 /*===================

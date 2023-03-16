@@ -1,3 +1,77 @@
 @media (min-width:$mobileVersion){
-    
+    .headerHistory {
+        li:nth-child(2){
+            a {
+                color: $mainBolor;
+                font-size: 28px;
+            }
+
+        }
+    }
+    header {
+        background-image: url(/img/background-curves.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        width: 100%;
+
+        section {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(254, 202, 87, .8);
+            display: flex;
+            @include displayCenter;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            height: 70%;
+        }
+
+        li {
+            display: flex;
+        }
+        
+        a {
+            color: $secondColor;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    details {
+        display:none;
+    }
+
+    nav {
+        background-color: $secondColor;
+        border-top:3px solid $mainBolor ;
+        border-bottom:3px solid $mainBolor ;
+        height: 6vh;
+
+        ul {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+        }
+
+        a {
+            width: 100%;
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+            @include displayCenter;
+        }
+        
+    }
 }

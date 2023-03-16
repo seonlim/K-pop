@@ -42,7 +42,7 @@
     <!-- nav ends -->
     <!-- MAIN -->
     <main class="music">
-        <section class="chart" id="chart">
+        <section class="row chart" id="chart">
             <article>
                 <h2>Timeline chart</h2>
             </article>
@@ -95,7 +95,7 @@
                   </table>
             </section>
         </section>
-        <section class="new-album" id="new-album">
+        <section class="row new-album" id="new-album">
             <article>
                 <h2>New Album</h2>
             </article>
@@ -108,7 +108,7 @@
                 </figure>
             </section>
         </section>
-        <section class="music-video" id="music-video">
+        <section class="row music-video" id="music-video">
             <article>
                 <h2>Music Videos</h2> 
             </article>
@@ -149,13 +149,67 @@
                         </p>
                     </figcaption>
                 </figure>
+                <figure>
+                    <a href="https://www.youtube.com/watch?v=POe9SOEKotk" target="_blank"><img src="/img/music-img/blackpink.png" alt="Blackpink"></a>
+                    <figcaption>
+                        <h4>
+                            <span>BLACK PINK</span> |
+                            <small>2022-09-16</small>
+                        </h4>
+                        <p>
+                            Shut Down M/V
+                        </p>
+                    </figcaption>
+                </figure>
             </section>
         </section>
-        <section class="play-list" id="play-list">
+        <section class="row play-list" id="play-list">
             <article>
                 <h2>Play list</h2>
             </article>
-            <section> <!-- row -->
+            <section> 
+                <figure>
+                    <img src="/img/music-img/cozy.jpg" alt="Cover-01">
+                    <figcaption>
+                        <p>title of playlist</p>
+                        <h5>
+                            <i class="fa-regular fa-heart"></i>
+                            <small>23 songs</small>
+                        </h5>
+                        <aside>
+                            <span>#2023</span>
+                            <span>#kpop</span>
+                        </aside>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/music-img/cozy.jpg" alt="Cover-01">
+                    <figcaption>
+                        <p>title of playlist</p>
+                        <h5>
+                            <i class="fa-regular fa-heart"></i>
+                            <small>23 songs</small>
+                        </h5>
+                        <aside>
+                            <span>#2023</span>
+                            <span>#kpop</span>
+                        </aside>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/music-img/cozy.jpg" alt="Cover-01">
+                    <figcaption>
+                        <p>title of playlist</p>
+                        <h5>
+                            <i class="fa-regular fa-heart"></i>
+                            <small>23 songs</small>
+                        </h5>
+                        <aside>
+                            <span>#2023</span>
+                            <span>#kpop</span>
+                        </aside>
+                    </figcaption>
+                </figure>
                 <figure>
                     <img src="/img/music-img/cozy.jpg" alt="Cover-01">
                     <figcaption>
@@ -180,24 +234,24 @@
                 <li><a href="#">#Blackpink</a></li>
             </ul>
         </section>
-        <section class="recommendation" id="recommendation">
+        <section class="row recommendation" id="recommendation">
             <article>
-                <h2>Recommendation song</h2>
-                <p>Please recommendation about Spring song</p>
+                <h2>Recommendation</h2>
+                <p>Do you have a favorite song that puts you in the springtime mood? We'd love to hear from you! Share your suggestions with us below:</p>
             </article>
             <section>
                 <form action="#">
                     <aside>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your Name">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title" placeholder="Enter the song title">
+                    </aside>
+                    <aside>
+                        <label for="artist">Artist:</label>
+                        <input type="text" name="artist" id="artist" placeholder="Enter the artist">
                     </aside>
                     <aside>
                         <label for="email">Email:</label>
                         <input type="email" name="email" id="email" placeholder="Enter your Email">
-                    </aside>
-                    <aside>
-                        <label for="message">Recommendation song:</label>
-                        <textarea name="message" id="message"  placeholder="Message"></textarea>
                     </aside>
                     <input type="submit" value="Submit">
                 </form>

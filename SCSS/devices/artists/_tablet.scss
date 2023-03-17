@@ -1,5 +1,22 @@
 @media (min-width:$tabletVersion){
 
+  //header
+  .headerratist{
+    li:nth-child(5){
+        a {
+            font-size: 36px;
+        }
+    }
+  }
+  //navigation
+  nav {
+    a:hover {
+        background-color: $mainBolor;
+        color: gainsboro;
+        box-shadow: 0 0 5px black;
+    }
+  }
+  //main
   .artist-main{
     h6{
       font-size: 24px;
@@ -107,8 +124,22 @@
       column-gap: 2vh;
     }
   }
-
 }
+/*===================
+ footer
+====================*/
+footer {
+  p {
+      font-size: 22px;
+  }
+
+  a:hover {
+      background: $secondColor;
+      color: $mainColor;
+      border-color: $mainColor;
+  }
+}
+
 
 }
 

@@ -1,5 +1,20 @@
 @media (min-width:$desktopVersion){
 
+  //header
+  header {
+    ul {
+        width: 50%;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    ul {
+        width: 50%;
+    }
+  }
+
   .artist-main{
     h6{
       font-size: 30px;
@@ -60,6 +75,12 @@
     width: 60%;
   }
 }
+/*===================
+ footer
+====================*/
 
+footer {
+  flex-direction: row;
+}
 
 }

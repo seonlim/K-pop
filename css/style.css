@@ -22,6 +22,80 @@ img {
 }
 
 @media (min-width: 200px) {
+  /*===================
+  header
+  ====================*/
+  .headerartist li:nth-child(5) a {
+    color: #2d3436;
+    font-size: 28px;
+  }
+  header {
+    background-image: url(/img/background-curves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    width: 100%;
+  }
+  header section {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 202, 87, 0.8);
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 70%;
+  }
+  header li {
+    display: flex;
+  }
+  header a {
+    color: #6a39ce;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  details {
+    display: none;
+  }
+  /*===================
+  nav
+  ====================*/
+  nav {
+    background-color: #6a39ce;
+    border-top: 3px solid #2d3436;
+    border-bottom: 3px solid #2d3436;
+    height: 6vh;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  nav li {
+    display: flex;
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*===================
+  main
+  ====================*/
   .artist-main {
     padding: 20% 0;
     display: flex;
@@ -229,8 +303,44 @@ img {
     text-transform: capitalize;
     font-size: 24px;
   }
+  /*===================
+  footer
+  ====================*/
+  footer {
+    border-top: 3px solid #2d3436;
+    background-color: #6a39ce;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+  footer a {
+    background-color: #feca57;
+    padding: 2vh;
+    color: #6a39ce;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid #2d3436;
+    border-radius: 50px;
+  }
 }
 @media (min-width: 600px) {
+  .headerratist li:nth-child(5) a {
+    font-size: 36px;
+  }
+  nav a:hover {
+    background-color: #2d3436;
+    color: gainsboro;
+    box-shadow: 0 0 5px black;
+  }
   .artist-main h6 {
     font-size: 24px;
   }
@@ -334,8 +444,29 @@ img {
     -moz-column-gap: 2vh;
          column-gap: 2vh;
   }
+  /*===================
+   footer
+  ====================*/
+  footer p {
+    font-size: 22px;
+  }
+  footer a:hover {
+    background: #6a39ce;
+    color: #feca57;
+    border-color: #feca57;
+  }
 }
 @media (min-width: 1000px) {
+  header ul {
+    width: 50%;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    width: 50%;
+  }
   .artist-main h6 {
     font-size: 30px;
   }
@@ -389,5 +520,11 @@ img {
   }
   .fandom .right {
     width: 60%;
+  }
+  /*===================
+   footer
+  ====================*/
+  footer {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+@media (min-width:$desktopVersion){
+    header {
+        ul {
+            width: 50%;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        ul {
+            width: 50%;
+        }
+    }
+
+    .row {
+        align-items: center;
+        > article{
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    .aboutHistory{
+        figure {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2vh;
+        }
+
+        // figcaption {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        p {
+            width: 80%;
+        }
+
+        img {
+            float: none;
+            height: 20vh;
+            width: 50vh;
+            padding: 0;
+        }
+
+    }
+
+    .news {
+        figure {
+            width: 30%;
+        }
+    }
+
+    .events {
+        figure {
+            width: 23%;
+            min-height: 60vh;
+        }
+
+        figcaption {
+            height: 100%;
+            row-gap: 3vh;
+            justify-content: space-between;
+        }
+
+        h5 {
+            font-size: 22px;
+        }
+    }
+
+    footer {
+        flex-direction: row;
+        
+    }
+}

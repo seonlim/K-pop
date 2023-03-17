@@ -1,0 +1,39 @@
+@media (min-width:$tabletVersion){
+
+  .home-main{
+    h2{
+      font-size: 45px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+
+  //about
+  .about{
+    h3{
+      font-size: 30px;
+    }
+    h4{
+      font-size: 28px;
+    }
+  }
+  //artists
+  .artists{
+    p{
+      font-size: 18px;
+    }
+    figure{
+      flex-direction: row;
+      column-gap: 3vh;
+    }
+    img{
+      width: 40%;
+    }
+    h4{
+      font-size: 24px;
+    }
+
+  }
+}
+

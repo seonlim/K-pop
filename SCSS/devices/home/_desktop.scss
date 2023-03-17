@@ -1,0 +1,18 @@
+@media (min-width:$desktopVersion){
+
+  //about
+  .about{
+    padding-bottom: 0;
+    >section{
+      flex-direction: row;
+      column-gap: 2vh;
+    }
+  }
+  //artists
+  .artists{
+    >article{
+      padding-bottom: 5%;
+    }
+  }
+
+}

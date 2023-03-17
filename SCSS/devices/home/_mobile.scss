@@ -1,3 +1,70 @@
 @media (min-width:$mobileVersion){
-    
+
+
+  .home-main{
+    >section{
+      @include displayColumn(5vh);
+    }
+    h2{
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+  }
+  //about
+  .about{
+    padding: 15% 0;
+    align-items: center;
+    >section{
+      @include displayColumn(3vh);
+    }
+    figure{
+      @include displayColumn(2vh);
+    }
+    figure,
+    section{
+      width: 90%;
+    }
+    img{
+      width: 100%;
+    }
+    h3{
+      color: $secondColor;
+      font-size: 25px;
+      text-transform: capitalize;
+      padding-bottom: 3vh;
+    }
+    aside{
+      @include displayColumn(2vh);
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: 40vh;
+      background-color: ghostwhite;
+      box-shadow: 2px 2px 4px dimgray;
+      text-align: center;
+      padding: 0 5%;
+    }
+    h4{
+      font-size: 20px;
+    }
+
+  }
+  //artists
+  .artists{
+    padding: 15% 0;
+    align-items: center;
+    >section{
+      width: 90%;
+      @include displayColumn(5vh);
+    }
+    figure,
+    figcaption{
+      @include displayColumn(2vh);
+    }
+    img{
+      width: 100%;
+    }
+
+  }
+
 }

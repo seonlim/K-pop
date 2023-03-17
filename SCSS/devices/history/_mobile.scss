@@ -91,7 +91,7 @@
             }
 
             section {
-                @include displayColumn(3vh);
+                @include displayColumn(5vh);
                 align-items: center;
             }
         }
@@ -100,10 +100,12 @@
 
     .row {
         article {
+            row-gap: 1vh;
             h2 {
                 font-size: 34px;
                 color: $secondColor;
                 font-weight: 600;
+                border-bottom: 4px solid $mainColor;
             }
 
             p {
@@ -131,19 +133,39 @@
     }
 
     .timeline {
+        background-color: gainsboro;
+        padding: 5vh 0;
 
         aside {
             display: flex;
+            flex-direction: column-reverse;
             width: 90%;
             align-items: center;
-            column-gap: 2vh;
+            column-gap: 1vh;
 
-            &:nth-child(even){
-                flex-direction: row-reverse;
-            }
+            // &:nth-child(even){
+            //     flex-direction: row-reverse;
+            // }
+        }
+
+        strong{
+            color: $secondColor;
+            font-size: 20px;
+        }
+
+        small {
+            font-size: 16px;
+            color: $mainBolor;
+        }
+
+        i {
+            display: none;
+            font-size: 40px;
+            color: $mainColor;
         }
 
         span {
+            @include displayColumn(1vh);
             text-align: center;
         }
     }

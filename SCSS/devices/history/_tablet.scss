@@ -1,0 +1,161 @@
+@media (min-width:$tabletVersion){
+    a {
+        transition: .4s;
+    }
+    header {
+        ul {
+            flex-direction: row;
+        }
+
+        li {
+            align-items: center;
+        }
+
+        a {
+            font-size: 30px;
+
+            &:hover {
+                font-size: 36px;
+                color: $mainBolor;
+            }
+        }
+
+        hr {
+            height: 1vh;
+            width: 1vh;
+            background-color: $mainBolor;
+            border-radius: 50%;
+        }
+    }
+
+    .headerHistory {
+        li:nth-child(3){
+            a {
+                font-size: 36px;
+            }
+
+        }
+    }
+
+    nav {
+        a:hover {
+            background-color: $mainBolor;
+            color: gainsboro;
+            box-shadow: 0 0 5px black;
+        }
+
+    }
+
+    .aboutHistory {
+        align-items: center;
+        > section {
+            align-items: center;
+
+        }
+
+        figure {
+            width: 90%;
+            display: block;
+        }
+
+        figcaption {
+            display: block;
+        }
+
+        img {
+            height: 20vh;
+            width: 40vh;
+            float: left;
+            padding: 2vh;
+        }
+
+    }
+
+    .timeline {
+        aside {
+            flex-direction: row;
+            width: 95%;
+
+            
+        }
+        aside:nth-child(even){
+            flex-direction: row-reverse;
+            span {
+                text-align: left;
+            }
+        }
+
+        span {
+            width: 70%;
+            text-align: right;
+        }
+
+        small {
+            color: $secondColor;
+            font-size:20px ;
+        }
+
+        i {
+            font-size: 70px;
+            display: block;
+        }
+
+        
+    }
+
+    .news {
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        figcaption {
+            width: 100%;
+        }
+
+        figure {
+            width: 45%;
+        }
+
+        a:hover {
+            background-color: $mainBolor;
+            color: $mainColor;
+        }
+    }
+
+    .events {
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        figcaption {
+            align-items: center;
+            text-align: center;
+        }
+
+        figure {
+            width: 45%;
+        }
+
+        a:hover {
+            background-color: gainsboro;
+            color: $secondColor;
+            border-color: $secondColor;
+        }
+    }
+
+    footer {
+        p {
+            font-size: 22px;
+        }
+
+        a:hover {
+            background: $secondColor;
+            color: $mainColor;
+            border-color: $mainColor;
+        }
+    }
+}

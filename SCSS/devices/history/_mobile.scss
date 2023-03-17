@@ -1,6 +1,6 @@
 @media (min-width:$mobileVersion){
     .headerHistory {
-        li:nth-child(2){
+        li:nth-child(3){
             a {
                 color: $mainBolor;
                 font-size: 28px;
@@ -75,10 +75,6 @@
         
     }
 
-    // body {
-    //     background-color: gainsboro;
-    // }
-
     main {
         padding: 8vh 0;
         @include displayColumn(5vh);
@@ -143,9 +139,6 @@
             align-items: center;
             column-gap: 1vh;
 
-            // &:nth-child(even){
-            //     flex-direction: row-reverse;
-            // }
         }
 
         strong{
@@ -192,21 +185,17 @@
         a {
             background: $mainColor;
             color: $secondColor;
-            padding: 1vh;
+            padding: 0 1vh;
             width: 15vh;
             text-align: center;
             font-weight: 600;
             font-size: 18px;
             border: 1px solid $mainBolor;
-            border-radius: 50px;
+            // border-radius: 50px;
         }
     }
 
     .events {
-        > section {
-
-
-        }
 
         img {
             width: 100%;
@@ -234,12 +223,10 @@
             background: $secondColor;
             color: $mainColor;
             padding: 1vh;
-            width: 17vh;
             text-align: center;
             font-weight: 600;
             font-size: 18px;
             border: 1px solid $mainBolor;
-            border-radius: 50px;
         }
 
     }

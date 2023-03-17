@@ -3,7 +3,7 @@
 
   .home-main{
     >section{
-      @include displayColumn(5vh);
+      @include displayColumn;
     }
     h2{
       font-size: 32px;
@@ -14,11 +14,20 @@
   .about{
     padding: 15% 0;
     align-items: center;
+    >p{
+      width: 80%;
+      padding-bottom: 5vh;
+      color: dimgray
+    }
     >section{
       @include displayColumn(3vh);
     }
+    h2{
+      padding-bottom: 8vh
+    }
     figure{
       @include displayColumn(2vh);
+      padding-bottom: 8vh;
     }
     figure,
     section{
@@ -41,11 +50,18 @@
       height: 40vh;
       background-color: ghostwhite;
       box-shadow: 2px 2px 4px dimgray;
-      text-align: center;
       padding: 0 5%;
     }
     h4{
       font-size: 20px;
+    }
+    span{
+      color: $secondColor;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    p{
+      color: dimgray;
     }
 
   }
@@ -62,7 +78,11 @@
       @include displayColumn(2vh);
     }
     img{
-      width: 100%;
+      width: 90%;
+      border: 15px solid $mainColor;
+    }
+    h2{
+      padding-bottom: 8vh;
     }
 
   }

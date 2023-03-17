@@ -1,0 +1,100 @@
+@media (min-width:$tabletVersion){
+    a {
+        transition: .4s;
+    }
+    /** HEADER **/
+    header {
+        ul {
+            flex-direction: row;
+        }
+
+        li {
+            align-items: center;
+        }
+
+        a {
+            font-size: 30px;
+
+            &:hover {
+                font-size: 36px;
+                color: $mainBolor;
+            }
+        }
+
+        hr {
+            height: 1vh;
+            width: 1vh;
+            background-color: $mainBolor;
+            border-radius: 50%;
+        }
+    }
+
+    .header-music {
+        li:nth-child(4){
+            a {
+                font-size: 36px;
+            }
+
+        }
+    }
+
+    nav {
+        a:hover {
+            background-color: $mainBolor;
+            color: gainsboro;
+            box-shadow: 0 0 5px black;
+        }
+    }
+
+    /** ROW **/
+    .row {
+        article {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 18x;
+            }
+        }
+    }
+    
+    /** CHART **/
+    table td {
+        font-size: 20px;   
+    }
+    
+    /** MUSIC VIDEO **/
+    
+    /** PLAYLIST **/
+    .playlist {
+        > section {
+            @include displayRow(3vh);
+        }
+    }
+    
+    /** RECOMMENDATION **/
+    .recommendation {
+        height: 45vh;
+        aside {
+            @include displayCenter;
+        }
+    }
+    
+    input {
+        padding: 4%;
+    }
+
+    /** FOOTER **/
+    footer {
+        p {
+            font-size: 22px;
+        }
+
+        a:hover {
+            background: $secondColor;
+            color: $mainColor;
+            border-color: $mainColor;
+        }
+    }
+    
+    }

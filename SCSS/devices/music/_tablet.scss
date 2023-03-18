@@ -4,10 +4,6 @@
     }
     /** HEADER **/
     header {
-        ul {
-            flex-direction: row;
-        }
-
         li {
             align-items: center;
         }
@@ -20,17 +16,33 @@
                 color: $mainBolor;
             }
         }
+    }
 
-        hr {
-            height: 1vh;
-            width: 1vh;
-            background-color: $mainBolor;
-            border-radius: 50%;
+    details {
+        ul {
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 22px;
+            &:hover {
+                background-color: gainsboro;
+                color: $mainBolor;
+            }
         }
     }
 
-    .header-music {
-        li:nth-child(4){
+    .headerMusic {
+        li:nth-child(3){
+            a {
+                font-size: 36px;
+            }
+
+        }
+    } 
+
+    .headerMusic {
+        li:nth-child(7){
             a {
                 font-size: 36px;
             }

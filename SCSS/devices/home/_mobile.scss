@@ -2,6 +2,7 @@
 
 
   .home-main{
+    @include displayColumn(3vh);
     >section{
       @include displayColumn(5vh);
     }
@@ -12,13 +13,22 @@
   }
   //about
   .about{
-    padding: 15% 0;
     align-items: center;
+    >p{
+      width: 80%;
+      padding-bottom: 5vh;
+      color: dimgray
+    }
     >section{
       @include displayColumn(3vh);
+      align-items: center;
+    }
+    h2{
+      padding-bottom: 8vh
     }
     figure{
       @include displayColumn(2vh);
+      padding-bottom: 8vh;
     }
     figure,
     section{
@@ -41,17 +51,23 @@
       height: 40vh;
       background-color: ghostwhite;
       box-shadow: 2px 2px 4px dimgray;
-      text-align: center;
-      padding: 0 5%;
+      
     }
     h4{
       font-size: 20px;
+    }
+    span{
+      color: $secondColor;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    p{
+      color: dimgray;
     }
 
   }
   //artists
   .artists{
-    padding: 15% 0;
     align-items: center;
     >section{
       width: 90%;
@@ -62,9 +78,57 @@
       @include displayColumn(2vh);
     }
     img{
-      width: 100%;
+      width: 90%;
+      border: 15px solid $mainColor;
     }
 
+  }
+
+  //music
+  .music {
+    align-items: center;
+    row-gap: 3vh;
+    > aside {
+      column-gap: 2vh;
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    > section {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 3vh;
+      width: 90%;
+      justify-content: center;
+      background-color: ghostwhite;
+    }
+    figure:nth-child(even) {
+      flex-direction: row-reverse;
+
+    }
+    figure {
+      @include displayCenter;
+      column-gap: 3vh;
+      width: 90%;
+      aside {
+        font-weight: 700;
+        background-color: gainsboro;
+        border-radius: 50%;
+        width: 4vh;
+        height: 4vh;
+        @include displayCenter;
+      }
+    }
+    img {
+      width: 40%;
+      border-radius: 50%;
+      border: 5px solid $secondColor;
+    }
   }
 
 }

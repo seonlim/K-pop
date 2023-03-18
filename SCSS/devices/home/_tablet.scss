@@ -15,25 +15,54 @@
       font-size: 30px;
     }
     h4{
+      font-size: 35px;
+    }
+    li{
       font-size: 28px;
     }
   }
+
   //artists
   .artists{
     p{
       font-size: 18px;
+      line-height: 2;
     }
     figure{
       flex-direction: row;
       column-gap: 3vh;
     }
+    figure:nth-child(odd){
+      flex-direction: row-reverse;
+    }
     img{
       width: 40%;
+      height: 20vh;
     }
     h4{
       font-size: 24px;
     }
 
   }
+  //music
+  .music {
+    row-gap: 1vh;
+    img {
+      border: 10px solid $secondColor;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    aside {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 28px;
+    }
+    figcaption {
+      @include displayColumn(1vh);
+    }
+  }
+
 }
 

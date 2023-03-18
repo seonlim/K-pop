@@ -2,19 +2,65 @@
 
   //header
   header {
-    ul {
-        width: 50%;
+    section {
+        @include displayCenter;
     }
-  }
-
+    ul {
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    hr {
+        height: 1vh;
+        width: 1vh;
+        background-color: $mainBolor;
+        border-radius: 50%;
+        border: none;
+    }
+}
+  //nav
   nav {
     display: flex;
+    background-color: $secondColor;
+    border-top:3px solid $mainBolor ;
+    border-bottom:3px solid $mainBolor ;
+    height: 6vh;
     justify-content: center;
-    ul {
-        width: 50%;
-    }
-  }
 
+    ul {
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+
+    li {
+        display: flex;
+        width: 100%;
+    }
+
+    a {
+        width: 100%;
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+        @include displayCenter;
+    }
+
+
+    a:hover {
+        background-color: $mainBolor;
+        color: gainsboro;
+        box-shadow: 0 0 5px black;
+    }
+}
+
+details {
+    display: none;
+}
+
+
+  //main
   .artist-main{
     h6{
       font-size: 30px;

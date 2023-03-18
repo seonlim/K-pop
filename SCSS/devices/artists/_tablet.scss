@@ -1,21 +1,50 @@
 @media (min-width:$tabletVersion){
 
   //header
-  .headerratist{
+  a {
+    transition: .4s;
+   }
+  header {
+    ul {
+    }
+    li {
+        align-items: center;
+    }
+
+    a {
+        font-size: 30px;
+
+        &:hover {
+            font-size: 36px;
+            color: $mainBolor;
+        }
+    }
+  }
+
+details {
+    ul {
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 22px;
+        &:hover {
+            background-color: gainsboro;
+            color: $mainBolor;
+        }
+    }
+}
+
+.headerArtist {
     li:nth-child(5){
         a {
             font-size: 36px;
         }
+
     }
-  }
-  //navigation
-  nav {
-    a:hover {
-        background-color: $mainBolor;
-        color: gainsboro;
-        box-shadow: 0 0 5px black;
-    }
-  }
+}
+
+
   //main
   .artist-main{
     h6{

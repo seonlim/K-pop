@@ -1,18 +1,18 @@
 @media (min-width:$mobileVersion){
-
-
   /*===================
   header
   ====================*/
-  .headerartist {
-    li:nth-child(5){
+  .headerArtist {
+    > li:nth-child(5){
         a {
             color: $mainBolor;
             font-size: 28px;
-          }
-      }
-  }
+        }
+
+    }
+}
 header {
+    position: relative;
     background-image: url(/img/background-curves.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -24,18 +24,20 @@ header {
     section {
         width: 100%;
         height: 100%;
-        background-color: rgba(254, 202, 87, .8);
+        background-color: rgba(136, 136, 170, .8);
         display: flex;
-        @include displayCenter;
+        align-items: center;
     }
 
     ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 90%;
+        align-items: end;
+        width: 98%;
         height: 70%;
     }
+
     li {
         display: flex;
     }
@@ -46,38 +48,45 @@ header {
         font-weight: 600;
     }
 }
-  details {
-    display:none;
-  }
-  /*===================
-  nav
-  ====================*/
-  nav {
-    background-color: $secondColor;
-    border-top:3px solid $mainBolor ;
-    border-bottom:3px solid $mainBolor ;
-    height: 6vh;
-    
+
+details {
+    display:flex;
+    position: absolute;
+    height: 90%;
+    width: 50%;
+    text-align: left;
+
     ul {
-        display: flex;
-        justify-content:center;
+        position: absolute;
         width: 100%;
-        height: 100%;
+        justify-content: start;
     }
 
     li {
         display: flex;
         width: 100%;
+        background-color: $mainBolor;
+        box-shadow: 0 0 5px black;
+
     }
 
     a {
+        padding: 2vh;
+        color: gainsboro;
         width: 100%;
-        color: black;
-        font-weight: 600;
-        font-size: 16px;
-        @include displayCenter;
+        text-align: start;
     }
 }
+
+summary{
+    font-size: 28px;
+    padding-left: 3vh;
+}
+
+nav {
+    display: none;
+}
+
   /*===================
   main
   ====================*/
@@ -105,10 +114,10 @@ header {
       width: 30%;
       border-radius: 5px;
       background-color: $secondColor;
-      color: $mainColor;
+      color: whitesmoke;
       &:hover{
         color: $secondColor;
-        background-color: $mainColor;
+        background-color: whitesmoke;
         border: 2px solid $secondColor;
       }
     }
@@ -170,8 +179,10 @@ header {
       padding: 2%;
       width: 15vh
     }
+    h6{
+      color: whitesmoke;
+    }
   }
-
   /*===================
   fashion
   ====================*/
@@ -198,9 +209,7 @@ header {
     .left{
       @include displayColumn(3vh);
     }
-    .wrap{
-      @include displayColumn(5vh);
-    }
+    .wrap,
     aside{
       @include displayColumn(5vh);
     }
@@ -240,7 +249,6 @@ header {
       color: whitesmoke;
     }
   }
-
   /*===================
   star
   ====================*/
@@ -298,6 +306,5 @@ header {
         border-radius: 50px;
     }
 }
-
 
 }

@@ -2,8 +2,9 @@
 
 
   .home-main{
+    @include displayColumn(3vh);
     >section{
-      @include displayColumn;
+      @include displayColumn(5vh);
     }
     h2{
       font-size: 32px;
@@ -12,7 +13,6 @@
   }
   //about
   .about{
-    padding: 15% 0;
     align-items: center;
     >p{
       width: 80%;
@@ -21,6 +21,7 @@
     }
     >section{
       @include displayColumn(3vh);
+      align-items: center;
     }
     h2{
       padding-bottom: 8vh
@@ -50,7 +51,7 @@
       height: 40vh;
       background-color: ghostwhite;
       box-shadow: 2px 2px 4px dimgray;
-      padding: 0 5%;
+      
     }
     h4{
       font-size: 20px;
@@ -67,7 +68,6 @@
   }
   //artists
   .artists{
-    padding: 15% 0;
     align-items: center;
     >section{
       width: 90%;
@@ -81,10 +81,53 @@
       width: 90%;
       border: 15px solid $mainColor;
     }
-    h2{
-      padding-bottom: 8vh;
-    }
 
+  }
+
+  //music
+  .music {
+    align-items: center;
+    row-gap: 3vh;
+    > aside {
+      column-gap: 2vh;
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    > section {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 3vh;
+      width: 100%;
+      justify-content: center;
+    }
+    figure:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    figure {
+      @include displayCenter;
+      column-gap: 3vh;
+      width: 90%;
+      aside {
+        font-weight: 700;
+        background-color: gainsboro;
+        border-radius: 50%;
+        width: 4vh;
+        height: 4vh;
+        @include displayCenter;
+      }
+    }
+    img {
+      width: 40%;
+      border-radius: 50%;
+      border: 5px solid $mainColor;
+    }
+    
   }
 
 }

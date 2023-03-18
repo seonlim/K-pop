@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- header  -->
-    <header id="top" class="headerHistory">
+    <header id="top">
         <section>
-            <ul>
+            <ul class="headerHistory">
                 <li><a href="index.html">HOME</a></li>
                 <li><hr></li>
                 <li><a href="history.html">HISTORY</a></li>
@@ -21,6 +21,15 @@
                 <li><hr></li>
                 <li><a href="music.html">MUSIC</a></li>
             </ul>
+            <details>
+                <summary class="fa-solid fa-bars"></summary>
+                <ul>
+                    <li><a href="#aboutHistory">About</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </details>
         </section>
     </header>
     <!-- header ends -->
@@ -32,15 +41,6 @@
             <li><a href="#news">News</a></li>
             <li><a href="#events">Events</a></li>
         </ul>
-        <details>
-            <summary class="fa-solid fa-bars"></summary>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#artists">Artists</a></li>
-                <li><a href="#music">Music</a></li>
-            </ul>
-        </details>
     </nav>
     <!-- nav ends -->
     <main class="history">
@@ -126,60 +126,66 @@
                 </p>
             </article>
             <section>
-                <figure>
-                    <img src="img/news/twice-pic.jpeg" alt="pic-news-01">
-                    <figcaption>
-                        <p>
-                            New Twice's comeback .
-                        </p>
-                        <a href="#">Read More</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/news/aespa-pic.jpeg" alt="pic-news-02">
-                    <figcaption>
-                        <p>
-                            we are expecting aespa's comeback by may.
-                        </p>
-                        <a href="#">Read More</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/news/seung-wu-pic.jpeg" alt="pic-news-03">
-                    <figcaption>
-                        <p>
-                            in April 17 On Seung Wu will star his military service.
-                        </p>
-                        <a href="#">Read More</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/news/Jimin's-pic.jpeg" alt="pic-news-04">
-                    <figcaption>
-                        <p>
-                            Jimin's "set me free pt.2" is receiving mixed reactions from the fans because of Autotune.
-                        </p>
-                        <a href="#">Read More</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/news/blackpink-pic.jpeg" alt="pic-news-05">
-                    <figcaption>
-                        <p>
-                            Blackpink's members are "avoiding" hers fellow member jisoo in they tour, and here is why.
-                        </p>
-                        <a href="#">Read More</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/news/kazuha-pic.jpeg" alt="pic-news-06">
-                    <figcaption>
-                        <p>
-                            Le sserafim's kazuha visits her home in Japan, showing posters of popular girl groups in her room.
-                        </p>
-                        <a href="#">Read More</a>
-                    </figcaption>
-                </figure>
+                <a href="#">
+                    <figure>
+                        <img src="img/news/twice-pic.jpeg" alt="pic-news-01">
+                        <figcaption>
+                            <p>
+                                New Twice's comeback .
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="img/news/aespa-pic.jpeg" alt="pic-news-02">
+                        <figcaption>
+                            <p>
+                                we are expecting aespa's comeback by may.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="img/news/seung-wu-pic.jpeg" alt="pic-news-03">
+                        <figcaption>
+                            <p>
+                                in April 17 On Seung Wu will star his military service.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="img/news/Jimin's-pic.jpeg" alt="pic-news-04">
+                        <figcaption>
+                            <p>
+                                Jimin's "set me free pt.2" is receiving mixed reactions from the fans because of Autotune.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="img/news/blackpink-pic.jpeg" alt="pic-news-05">
+                        <figcaption>
+                            <p>
+                                Blackpink's members are "avoiding" hers fellow member jisoo in they tour, and here is why.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <img src="img/news/kazuha-pic.jpeg" alt="pic-news-06">
+                        <figcaption>
+                            <p>
+                                Le sserafim's kazuha visits her home in Japan, showing posters of popular girl groups in her room.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
             </section>
         </section>
         <section class="row events" id="events">

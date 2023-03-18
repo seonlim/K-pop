@@ -4,7 +4,6 @@
     }
     header {
         ul {
-            flex-direction: row;
         }
 
         li {
@@ -20,11 +19,20 @@
             }
         }
 
-        hr {
-            height: 1vh;
-            width: 1vh;
-            background-color: $mainBolor;
-            border-radius: 50%;
+        
+    }
+
+    details {
+        ul {
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 22px;
+            &:hover {
+                background-color: gainsboro;
+                color: $mainBolor;
+            }
         }
     }
 
@@ -35,16 +43,7 @@
             }
 
         }
-    }
-
-    nav {
-        a:hover {
-            background-color: $mainBolor;
-            color: gainsboro;
-            box-shadow: 0 0 5px black;
-        }
-
-    }
+    } 
 
     .aboutHistory {
         align-items: center;
@@ -115,12 +114,11 @@
         }
 
         figure {
-            width: 45%;
+            width: 100%;
         }
 
-        a:hover {
-            background-color: $mainBolor;
-            color: $mainColor;
+        a {
+            width: 45%;
         }
     }
 
@@ -136,9 +134,14 @@
             text-align: center;
         }
 
+        img {
+            min-height: 40vh;
+        }
+
         figure {
             width: 45%;
             height: 75vh;
+            justify-content: space-between;
         }
 
         a:hover {
@@ -146,6 +149,8 @@
             color: $secondColor;
             border-color: $secondColor;
         }
+
+
     }
 
     footer {
@@ -155,8 +160,8 @@
 
         a:hover {
             background: $secondColor;
-            color: $mainColor;
-            border-color: $mainColor;
+            color: ghostwhite;
+            border-color: ghostwhite;
         }
     }
 }

@@ -1,6 +1,6 @@
 @media (min-width:$mobileVersion){
     .headerHistory {
-        li:nth-child(3){
+        > li:nth-child(3){
             a {
                 color: $mainBolor;
                 font-size: 28px;
@@ -9,6 +9,7 @@
         }
     }
     header {
+        position: relative;
         background-image: url(/img/background-curves.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -20,16 +21,17 @@
         section {
             width: 100%;
             height: 100%;
-            background-color: rgba(254, 202, 87, .8);
+            background-color: rgba(136, 136, 170, .8);
             display: flex;
-            @include displayCenter;
+            align-items: center;
         }
 
         ul {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 90%;
+            align-items: end;
+            width: 98%;
             height: 70%;
         }
 
@@ -45,34 +47,41 @@
     }
 
     details {
-        display:none;
-    }
-
-    nav {
-        background-color: $secondColor;
-        border-top:3px solid $mainBolor ;
-        border-bottom:3px solid $mainBolor ;
-        height: 6vh;
+        display:flex;
+        position: absolute;
+        height: 90%;
+        width: 50%;
+        text-align: left;
 
         ul {
-            display: flex;
+            position: absolute;
             width: 100%;
-            height: 100%;
+            justify-content: start;
         }
 
         li {
             display: flex;
             width: 100%;
+            background-color: $mainBolor;
+            box-shadow: 0 0 5px black;
+
         }
 
         a {
+            padding: 2vh;
+            color: gainsboro;
             width: 100%;
-            color: black;
-            font-weight: 600;
-            font-size: 18px;
-            @include displayCenter;
+            text-align: start;
         }
-        
+    }
+
+    summary{
+        font-size: 28px;
+        padding-left: 3vh;
+    }
+
+    nav {
+        display: none;
     }
 
     main {
@@ -129,7 +138,7 @@
     }
 
     .timeline {
-        background-color: gainsboro;
+        background-color: $mainBolor;
         padding: 5vh 0;
 
         aside {
@@ -148,13 +157,17 @@
 
         small {
             font-size: 16px;
-            color: $mainBolor;
+            color: $mainColor;
         }
 
         i {
             display: none;
             font-size: 40px;
             color: $mainColor;
+        }
+
+        p {
+            color: whitesmoke
         }
 
         span {
@@ -167,6 +180,7 @@
         
         figure {
             width: 100%;
+            height: 100%;
             @include displayColumn(3vh);
             align-items: center;
             border-top: 2px solid $mainBolor;
@@ -184,15 +198,7 @@
         }
 
         a {
-            background: $mainColor;
-            color: $secondColor;
-            padding: 0 1vh;
-            width: 15vh;
-            text-align: center;
-            font-weight: 600;
-            font-size: 18px;
-            border: 1px solid $mainBolor;
-            // border-radius: 50px;
+          width: 100%;
         }
     }
 
@@ -206,6 +212,8 @@
         figure {
             width: 90%;
             background-color: gainsboro;
+            box-shadow: 0 0 25px $mainBolor;
+
         }
 
         figcaption {
@@ -223,7 +231,7 @@
 
         a {
             background: $secondColor;
-            color: $mainColor;
+            color: ghostwhite;
             padding: 1vh;
             text-align: center;
             font-weight: 600;
@@ -249,7 +257,7 @@
         }
 
         a {
-            background-color: $mainColor;
+            background-color: ghostwhite;
             padding: 2vh;
             color: $secondColor;
             font-size: 18px;

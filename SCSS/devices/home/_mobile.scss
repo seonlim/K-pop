@@ -103,11 +103,13 @@
       display: flex;
       flex-wrap: wrap;
       row-gap: 3vh;
-      width: 100%;
+      width: 90%;
       justify-content: center;
+      background-color: ghostwhite;
     }
     figure:nth-child(even) {
       flex-direction: row-reverse;
+
     }
     figure {
       @include displayCenter;
@@ -125,7 +127,7 @@
     img {
       width: 40%;
       border-radius: 50%;
-      border: 5px solid $mainColor;
+      border: 5px solid $secondColor;
     }
   }
 

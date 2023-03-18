@@ -1,0 +1,174 @@
+@media (min-width:$tabletVersion){
+
+  //header
+  a {
+    transition: .4s;
+   }
+  header {
+    li {
+        align-items: center;
+    }
+
+    a {
+        font-size: 30px;
+
+        &:hover {
+            font-size: 36px;
+            color: $mainBolor;
+        }
+    }
+  }
+
+details {
+    ul {
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 22px;
+        &:hover {
+            background-color: gainsboro;
+            color: $mainBolor;
+        }
+    }
+}
+
+.headerArtist {
+    li:nth-child(5){
+        a {
+            font-size: 36px;
+        }
+
+    }
+}
+
+
+  //main
+  .artist-main{
+    h6{
+      font-size: 24px;
+    }
+    h2{
+      font-size: 38px;
+    }
+    p{
+      font-size: 20px;
+    }
+    a{
+      width: 15%;
+
+    }
+  }
+  /*===================
+  concept
+  ====================*/
+  .concept{
+    aside{
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 2vh;
+    }
+    figure{
+      width: 47%;
+      height: 40vh;
+    }
+    img{
+      height: 20vh;
+    }
+
+  }
+/*===================
+ fashion
+====================*/
+  .fashion{
+    figure{
+      display: flex;
+      column-gap: 2vh;
+    }
+    img{
+      margin: 0;
+    }
+    h4{
+      font-size: 20px;
+    }
+    figcaption{
+      @include displayColumn(1vh);
+    }
+  }
+/*===================
+ fandom
+====================*/
+.fandom{
+  aside{
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3vh;
+  }
+  h4{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  figure{
+    width: 47%;
+    height: 20vh;
+    position: relative;
+    &:hover{
+      @include displayCenter;
+    }
+    &:hover h5{
+      display: none;
+    }
+    &:hover figcaption{
+      position: absolute;
+      width: 90%;
+      height: 100%;
+      @include displayColumn(1vh);
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover img{
+      display: none;
+    }
+
+  }
+  img{
+    height: 20vh;
+  }
+  figcaption{
+    display: none;
+  }
+}
+/*===================
+ star
+====================*/
+.star{
+  h2{
+    width: 100%;
+  }
+  .container{
+    > section{
+      flex-direction: row;
+      column-gap: 2vh;
+    }
+  }
+}
+/*===================
+ footer
+====================*/
+footer {
+  p {
+      font-size: 22px;
+  }
+
+  a:hover {
+      background: $secondColor;
+      color: $mainColor;
+      border-color: $mainColor;
+  }
+}
+
+
+}
+
+
+

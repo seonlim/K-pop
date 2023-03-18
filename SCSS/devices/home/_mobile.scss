@@ -86,7 +86,6 @@
       display: none;
   }
 
-
   .home-main{
     @include displayColumn(3vh);
     >section{
@@ -169,6 +168,52 @@
       border: 15px solid $mainColor;
     }
 
+  }
+
+  .music {
+    align-items: center;
+    row-gap: 3vh;
+    > aside {
+      column-gap: 2vh;
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    > section {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 3vh;
+      width: 90%;
+      justify-content: center;
+      background-color: ghostwhite;
+    }
+    figure:nth-child(even) {
+      flex-direction: row-reverse;
+
+    }
+    figure {
+      @include displayCenter;
+      column-gap: 3vh;
+      width: 90%;
+      aside {
+        font-weight: 700;
+        background-color: gainsboro;
+        border-radius: 50%;
+        width: 4vh;
+        height: 4vh;
+        @include displayCenter;
+      }
+    }
+    img {
+      width: 40%;
+      border-radius: 50%;
+      border: 5px solid $secondColor;
+    }
   }
 
   .history {

@@ -1,5 +1,51 @@
 @media (min-width:$tabletVersion){
 
+  a {
+    transition: .4s;
+  }
+  header {
+    ul {
+    }
+
+    li {
+        align-items: center;
+    }
+
+    a {
+        font-size: 30px;
+
+        &:hover {
+            font-size: 36px;
+            color: $mainBolor;
+        }
+    }
+
+    
+  }
+
+  details {
+    ul {
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 22px;
+        &:hover {
+            background-color: gainsboro;
+            color: $mainBolor;
+        }
+    }
+  }
+
+  .headerHome {
+      li:nth-child(1){
+          a {
+            font-size: 36px;
+          }
+
+    }
+  }
+
   .home-main{
     h2{
       font-size: 45px;
@@ -42,6 +88,18 @@
       font-size: 24px;
     }
 
+  }
+
+  footer {
+    p {
+        font-size: 22px;
+    }
+
+    a:hover {
+        background: $secondColor;
+        color: ghostwhite;
+        border-color: ghostwhite;
+    }
   }
 }
 

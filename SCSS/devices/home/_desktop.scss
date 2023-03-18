@@ -81,6 +81,15 @@
       padding-bottom: 5%;
     }
   }
+  //chart 
+  .music {
+    img {
+      width: 30%;
+    }
+    figure {
+      justify-content: space-evenly;
+    }
+  }
 
   .newsHome{
     flex-direction: row;

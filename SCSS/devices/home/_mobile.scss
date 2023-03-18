@@ -11,41 +11,41 @@
   }
 
   header {
-  position: relative;
-  background-image: url(/img/background-curves.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40vh;
-  display: flex;
-  width: 100%;
-
-  section {
+    position: relative;
+    background-image: url(/img/background-curves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
     width: 100%;
-    height: 100%;
-    background-color: rgba(136, 136, 170, .8);
-    display: flex;
-    align-items: center;
-  }
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    width: 98%;
-    height: 70%;
-  }
+    section {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(136, 136, 170, .8);
+      display: flex;
+      align-items: center;
+    }
 
-  li {
-    display: flex;
-  }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      width: 98%;
+      height: 70%;
+    }
+
+    li {
+      display: flex;
+    }
     
-  a {
-    color: $secondColor;
-    font-size: 22px;
-    font-weight: 600;
-  }
+    a {
+      color: $secondColor;
+      font-size: 22px;
+      font-weight: 600;
+    }
   }
 
   details {
@@ -88,8 +88,9 @@
 
 
   .home-main{
+    @include displayColumn(3vh);
     >section{
-      @include displayColumn;
+      @include displayColumn(5vh);
     }
     h2{
       font-size: 32px;
@@ -99,7 +100,6 @@
   }
   //about
   .about{
-    padding: 15% 0;
     align-items: center;
     >p{
       width: 80%;
@@ -108,6 +108,7 @@
     }
     >section{
       @include displayColumn(3vh);
+      align-items: center;
     }
     h2{
       padding-bottom: 8vh
@@ -137,7 +138,7 @@
       height: 40vh;
       background-color: ghostwhite;
       box-shadow: 2px 2px 4px dimgray;
-      padding: 0 5%;
+      
     }
     h4{
       font-size: 20px;
@@ -154,7 +155,6 @@
   }
   //artists
   .artists{
-    padding: 15% 0;
     align-items: center;
     >section{
       width: 90%;
@@ -167,9 +167,6 @@
     img{
       width: 90%;
       border: 15px solid $mainColor;
-    }
-    h2{
-      padding-bottom: 8vh;
     }
 
   }
@@ -248,7 +245,53 @@
         font-weight: 600;
         border: 3px solid $mainBolor;
         border-radius: 50px;
+  }
+
+  .music {
+    align-items: center;
+    row-gap: 3vh;
+    > aside {
+      column-gap: 2vh;
+      display: flex;
+      align-items: center;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 25px;
+    }
+    > section {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 3vh;
+      width: 90%;
+      justify-content: center;
+      background-color: ghostwhite;
+    }
+    figure:nth-child(even) {
+      flex-direction: row-reverse;
+
+    }
+    figure {
+      @include displayCenter;
+      column-gap: 3vh;
+      width: 90%;
+      aside {
+        font-weight: 700;
+        background-color: gainsboro;
+        border-radius: 50%;
+        width: 4vh;
+        height: 4vh;
+        @include displayCenter;
+      }
+    }
+    img {
+      width: 40%;
+      border-radius: 50%;
+      border: 5px solid $secondColor;
     }
   }
 
+  }
 }

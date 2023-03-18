@@ -90,6 +90,44 @@
 
   }
 
+  .history {
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .historyLeft {
+    @include displayColumn(2vh);
+    align-items: center;
+
+    a{
+      width: 90%;
+
+    }
+
+    figure {
+      width: 100%;
+    }
+  }
+
+  .newsHome{
+    width: 100%;
+    @include displayColumn(3vh);
+    align-items: center
+  }
+
+  .historyRight {
+    @include displayColumn(1vh);
+    align-items: center;
+
+    p {
+      width: 80%;
+    }
+    
+  }
+
+
   footer {
     p {
         font-size: 22px;

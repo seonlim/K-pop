@@ -82,6 +82,21 @@
     }
   }
 
+  .newsHome{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    a {
+      width: 32%;
+    }
+
+    figcaption {
+      height: 8vh;
+      @include displayCenter;
+    }
+  }
+
   footer {
     flex-direction: row;
     

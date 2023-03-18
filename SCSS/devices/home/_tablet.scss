@@ -21,6 +21,7 @@
       font-size: 28px;
     }
   }
+
   //artists
   .artists{
     p{
@@ -43,7 +44,25 @@
     }
 
   }
-  //
+  //music
+  .music {
+    row-gap: 1vh;
+    img {
+      border: 10px solid $mainColor;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    aside {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 28px;
+    }
+    figcaption {
+      @include displayColumn(1vh);
+    }
+  }
 
 }
 

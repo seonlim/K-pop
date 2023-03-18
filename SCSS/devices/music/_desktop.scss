@@ -1,0 +1,68 @@
+@media (min-width:$desktopVersion){
+    /** HEADER **/
+    header {
+        ul {
+            width: 50%;
+        }
+    }
+
+    /** NAV **/
+    nav {
+        display: flex;
+        justify-content: center;
+        ul {
+            width: 50%;
+        }
+    }
+
+    main {
+        align-items: center;
+        row-gap: 10vh;
+    }
+
+    .row {
+        width: 80%;
+    }
+
+    /** CHART**/
+    table {
+        width: 70%;
+    }
+    
+    /** ALBUM**/
+    .new-album {
+        width: 60%;
+        section {
+            row-gap: 7vh;
+        }
+
+        img,figcaption {
+            width: 80%;
+        }
+    }
+
+    /** MUSIC VIDEO**/
+    .music-video {
+        width: 60%;
+    }
+
+    /** PLAYLIST **/
+    .play-list {
+        > section {
+            gap: 5vh;
+        }
+        figure {
+            width: 40%;
+        }
+    }
+    .tag {
+        width: 100%;
+    }
+
+    /** FOOTER **/
+    footer {
+        flex-direction: row;
+        
+    }
+
+  }

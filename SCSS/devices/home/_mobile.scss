@@ -123,12 +123,11 @@
         height: 4vh;
         @include displayCenter;
       }
-    }
-    img {
-      width: 40%;
-      border-radius: 50%;
-      border: 5px solid $secondColor;
+      img {
+        width: 40%;
+        border-radius: 50%;
+        border: 5px solid $secondColor;
+      }
     }
   }
-
 }

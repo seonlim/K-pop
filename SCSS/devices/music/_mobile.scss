@@ -1,0 +1,307 @@
+@media (min-width:$mobileVersion){
+    /** HEADER **/
+    .headerMusic {
+        > li:nth-child(7){
+            a {
+                color: $mainBolor;
+                font-size: 28px;
+            }
+        }
+    }
+    header {
+        position: relative;
+        background-image: url(/img/background-curves.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        width: 100%;
+
+        section {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(136, 136, 170, .8);
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            width: 98%;
+            height: 70%;
+        }
+
+        li {
+            display: flex;
+        }
+        
+        a {
+            color: $secondColor;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    details {
+        display:flex;
+        position: absolute;
+        height: 90%;
+        width: 50%;
+        text-align: left;
+
+        ul {
+            position: absolute;
+            width: 100%;
+            justify-content: start;
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+            background-color: $mainBolor;
+            box-shadow: 0 0 5px black;
+
+        }
+
+        a {
+            padding: 2vh;
+            color: gainsboro;
+            width: 100%;
+            text-align: start;
+        }
+    }
+
+    summary{
+        font-size: 28px;
+        padding-left: 3vh;
+    }
+
+    /** NAV **/
+    nav {
+        display: none;
+    }
+
+    /** MAIN **/
+    main {
+        padding: 8vh 0vh;
+        @include displayColumn(5vh);
+        
+        > section {
+            @include displayColumn(5vh);
+            article {
+                @include displayColumn(1vh);
+                align-items: center;
+            }
+
+            section {
+                @include displayColumn(3vh);
+                align-items: center;
+            }
+            
+        }
+    }
+
+    .row {
+        article {
+            h2 {
+                font-size: 34px;
+                color: $secondColor;
+                font-weight: 600;
+                text-align: center;
+                border-bottom: 3px solid $mainColor;
+            }
+
+            p {
+                font-size: 14px;
+                color: $mainBolor;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+
+    /** CHART **/
+    table {
+        font-size: 16px;
+        border: 1px solid $mainBolor;
+        border-collapse: collapse;
+        width: 90%;
+        text-align: start;
+        background-color: ghostwhite;
+    }
+    
+    thead {
+        background-color: $mainColor;
+    }
+
+    tr:nth-child(even) {
+        background-color: white;
+    }
+
+    td, th {
+        border: none;
+        color: $mainBolor;
+        padding: 1vh;
+        text-align: start;
+    }
+
+    /** NEW ALBUM**/
+    .new-album {
+        img {
+            width: 90%;
+        }
+        figure {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        figcaption {
+            display: none;
+        }
+    }
+
+    /** MUSIC VIDEO**/
+    .music-video {
+        figure {
+            @include displayColumn(2vh);
+            width: 90%;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+        }
+        small {
+            color: $mainBolor;
+        } 
+    }
+
+    /** PLAY LIST**/
+    .play-list {
+        > section {
+            @include displayRow(1vh);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        figure {
+            width: 40%;
+            border: 1px solid darkgray;
+        }
+        figcaption {
+            padding: 5%;
+        }
+        img {
+            width: 100%;
+        }
+        p {
+            font-weight: 600;
+        }
+        a {
+            background-color: $secondColor;
+            border-radius: 50px;
+            padding: 1%;
+            font-size: 10px;
+            color: gainsboro;
+        }
+        i {
+            color: red;
+        }
+    }
+
+    /** TRENDING TAG **/
+    .tag {
+        > section {
+            @include displayCenter;
+        }
+        ul {
+            display: flex;
+            row-gap: 2vh;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            display: flex;
+            width: 30%;
+            row-gap: 2vh;
+            justify-content: center;
+        }
+
+        a {
+            background-color: $mainColor;
+            color: $mainBolor;
+            border: 1px solid $mainBolor;
+            border-radius: 50px;
+            font-size: 14px;
+            padding: 5%;
+        }
+    }
+
+    /** RECOMMENDATION **/
+    .recommendation {
+        height: 50vh;
+        @include displayCenter;
+        background-color: ghostwhite;
+        > article {
+            width: 90%
+        }
+        aside {
+            @include displayRow(1vh);
+        }
+    }
+
+    form {
+        @include displayColumn(2vh);
+        align-items: center;
+    }
+
+    input {
+        padding: 2%;
+        border: 1px solid $secondColor;
+        width: 96%;
+    }
+
+    [type="submit"] {
+        background-color: $secondColor;
+        color: $mainColor;
+        padding: 1vh;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        width: 40%;
+    }
+
+    /** FOOTER **/
+    footer {
+        border-top: 3px solid $mainBolor ;
+        background-color: $secondColor;
+        height: 20vh;
+        @include displayCenter;
+        flex-direction: column;
+        justify-content:space-around;
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            background-color: $mainColor;
+            padding: 2vh;
+            color: $secondColor;
+            font-size: 18px;
+            font-weight: 600;
+            border: 3px solid $mainBolor;
+            border-radius: 50px;
+        }
+    }
+}

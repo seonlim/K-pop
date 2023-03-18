@@ -331,6 +331,237 @@ img {
     border-radius: 50px;
   }
 }
+@media (min-width: 200px) {
+  .headerHistory > li:nth-child(3) a {
+    color: #2d3436;
+    font-size: 28px;
+  }
+  header {
+    position: relative;
+    background-image: url(/img/background-curves.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    width: 100%;
+  }
+  header section {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(136, 136, 170, 0.8);
+    display: flex;
+    align-items: center;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 98%;
+    height: 70%;
+  }
+  header li {
+    display: flex;
+  }
+  header a {
+    color: #456990;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  details {
+    display: flex;
+    position: absolute;
+    height: 90%;
+    width: 50%;
+    text-align: left;
+  }
+  details ul {
+    position: absolute;
+    width: 100%;
+    justify-content: start;
+  }
+  details li {
+    display: flex;
+    width: 100%;
+    background-color: #2d3436;
+    box-shadow: 0 0 5px black;
+  }
+  details a {
+    padding: 2vh;
+    color: gainsboro;
+    width: 100%;
+    text-align: start;
+  }
+  summary {
+    font-size: 28px;
+    padding-left: 3vh;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    padding: 8vh 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  main section article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0vh;
+    align-items: center;
+  }
+  main section section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    align-items: center;
+  }
+  .row article {
+    row-gap: 1vh;
+  }
+  .row article h2 {
+    font-size: 34px;
+    color: #456990;
+    font-weight: 600;
+    border-bottom: 4px solid #8888AA;
+  }
+  .row article p {
+    font-size: 18px;
+    color: #2d3436;
+    font-weight: 600;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+  }
+  .aboutHistory img {
+    width: 100%;
+  }
+  .aboutHistory figcaption {
+    width: 90%;
+  }
+  .timeline {
+    background-color: #2d3436;
+    padding: 5vh 0;
+  }
+  .timeline aside {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .timeline strong {
+    color: #456990;
+    font-size: 20px;
+  }
+  .timeline small {
+    font-size: 16px;
+    color: #8888AA;
+  }
+  .timeline i {
+    display: none;
+    font-size: 40px;
+    color: #8888AA;
+  }
+  .timeline p {
+    color: whitesmoke;
+  }
+  .timeline span {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    text-align: center;
+  }
+  .news figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+    border-top: 2px solid #2d3436;
+  }
+  .news figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    width: 90%;
+    padding-bottom: 1vh;
+  }
+  .news img {
+    width: 100%;
+    height: 45vh;
+  }
+  .news a {
+    width: 100%;
+  }
+  .events img {
+    width: 100%;
+    min-height: 35vh;
+  }
+  .events figure {
+    width: 90%;
+    background-color: gainsboro;
+    box-shadow: 0 0 25px #2d3436;
+  }
+  .events figcaption {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    padding-bottom: 1vh;
+  }
+  .events h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3436;
+  }
+  .events a {
+    background: #456990;
+    color: ghostwhite;
+    padding: 1vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #2d3436;
+  }
+  footer {
+    border-top: 3px solid #2d3436;
+    background-color: #456990;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+  footer a {
+    background-color: ghostwhite;
+    padding: 2vh;
+    color: #456990;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid #2d3436;
+    border-radius: 50px;
+  }
+}
 @media (min-width: 600px) {
   a {
     transition: 0.4s;
@@ -473,6 +704,119 @@ img {
     border-color: #8888AA;
   }
 }
+@media (min-width: 600px) {
+  a {
+    transition: 0.4s;
+  }
+  header li {
+    align-items: center;
+  }
+  header a {
+    font-size: 30px;
+  }
+  header a:hover {
+    font-size: 36px;
+    color: #2d3436;
+  }
+  details ul {
+    flex-direction: column;
+  }
+  details a {
+    font-size: 22px;
+  }
+  details a:hover {
+    background-color: gainsboro;
+    color: #2d3436;
+  }
+  .headerHistory li:nth-child(3) a {
+    font-size: 36px;
+  }
+  .aboutHistory {
+    align-items: center;
+  }
+  .aboutHistory > section {
+    align-items: center;
+  }
+  .aboutHistory figure {
+    width: 90%;
+    display: block;
+  }
+  .aboutHistory figcaption {
+    display: block;
+  }
+  .aboutHistory img {
+    height: 20vh;
+    width: 40vh;
+    float: left;
+    padding: 2vh;
+  }
+  .timeline aside {
+    flex-direction: row;
+    width: 95%;
+  }
+  .timeline aside:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .timeline aside:nth-child(even) span {
+    text-align: left;
+  }
+  .timeline span {
+    width: 70%;
+    text-align: right;
+  }
+  .timeline small {
+    color: #456990;
+    font-size: 20px;
+  }
+  .timeline i {
+    font-size: 70px;
+    display: block;
+  }
+  .news > section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .news figcaption {
+    width: 100%;
+  }
+  .news figure {
+    width: 100%;
+  }
+  .news a {
+    width: 45%;
+  }
+  .events > section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .events figcaption {
+    align-items: center;
+    text-align: center;
+  }
+  .events img {
+    min-height: 40vh;
+  }
+  .events figure {
+    width: 45%;
+    height: 75vh;
+    justify-content: space-between;
+  }
+  .events a:hover {
+    background-color: gainsboro;
+    color: #456990;
+    border-color: #456990;
+  }
+  footer p {
+    font-size: 22px;
+  }
+  footer a:hover {
+    background: #456990;
+    color: ghostwhite;
+    border-color: ghostwhite;
+  }
+}
 @media (min-width: 1000px) {
   header section {
     display: flex;
@@ -583,6 +927,100 @@ img {
   /*===================
    footer
   ====================*/
+  footer {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul {
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header hr {
+    height: 1vh;
+    width: 1vh;
+    background-color: #2d3436;
+    border-radius: 50%;
+    border: none;
+  }
+  nav {
+    display: flex;
+    background-color: #456990;
+    border-top: 3px solid #2d3436;
+    border-bottom: 3px solid #2d3436;
+    height: 6vh;
+    justify-content: center;
+  }
+  nav ul {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+  nav li {
+    display: flex;
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a:hover {
+    background-color: #2d3436;
+    color: gainsboro;
+    box-shadow: 0 0 5px black;
+  }
+  details {
+    display: none;
+  }
+  .row {
+    align-items: center;
+  }
+  .row > article {
+    width: 30%;
+    text-align: center;
+  }
+  .aboutHistory figure {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .aboutHistory p {
+    width: 80%;
+  }
+  .aboutHistory img {
+    float: none;
+    height: 20vh;
+    width: 50vh;
+    padding: 0;
+  }
+  .news a {
+    width: 30%;
+  }
+  .events figure {
+    width: 23%;
+    height: 85vh;
+  }
+  .events figcaption {
+    height: 100%;
+    row-gap: 3vh;
+    justify-content: space-between;
+  }
+  .events h5 {
+    font-size: 22px;
+  }
   footer {
     flex-direction: row;
   }

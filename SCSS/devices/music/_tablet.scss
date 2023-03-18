@@ -1,0 +1,192 @@
+@media (min-width:$tabletVersion){
+    a {
+        transition: .4s;
+    }
+    /** HEADER **/
+    header {
+        li {
+            align-items: center;
+        }
+
+        a {
+            font-size: 30px;
+
+            &:hover {
+                font-size: 36px;
+                color: $mainBolor;
+            }
+        }
+    }
+
+    details {
+        ul {
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 22px;
+            &:hover {
+                background-color: gainsboro;
+                color: $mainBolor;
+            }
+        }
+    }
+
+    .headerMusic {
+        li:nth-child(3){
+            a {
+                font-size: 36px;
+            }
+
+        }
+    } 
+
+    .headerMusic {
+        li:nth-child(7){
+            a {
+                font-size: 36px;
+            }
+        }
+    }
+
+    nav {
+        li {
+            width: 100%;
+        }
+        a {
+            font-size: 15px;
+            width: 100%;
+            &:hover {
+                background-color: $mainBolor;
+                color: gainsboro;
+                box-shadow: 0 0 5px black;
+            }
+        }
+    }
+
+    /** ROW **/
+    .row {
+        article {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 18x;
+            }
+        }
+    }
+    
+    /** CHART **/
+    table td {
+        font-size: 20px;   
+    }
+
+    /** ALBUM **/
+    .new-album {
+        section {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        figure {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+            
+            &:hover {
+                figcaption {
+                    justify-content: center;
+                    height: 100%;
+                }
+            }
+        }
+        img {
+            width: 90%;
+            
+        }
+        figcaption {
+            @include displayColumn(3vh);
+            position: absolute;
+            height: 0%;
+            width: 90%;
+            @include displayCenter;
+            background-color: rgba(0, 0, 0, .6);
+            justify-content: end;
+            transition: .4s;
+        }
+        strong {
+            font-size: 30px;
+            color: whitesmoke;
+            border-bottom: 1px solid whitesmoke;
+        }
+        span {
+            font-size: 24px;
+            color: whitesmoke;
+        }
+        ul {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+        }
+        li {
+            display: flex;
+        }
+        a {
+            color: whitesmoke;
+            font-size: 24px;
+            &:hover {
+                color: $mainColor;   
+            }
+        }
+        
+    }
+    
+    /** MUSIC VIDEO **/
+    .music-video {
+        a:hover {
+            opacity: 0.7;
+        }
+    }
+    /** PLAYLIST **/
+    .playlist {
+        > section {
+            @include displayRow(3vh);
+        }
+    }
+    
+    /** RECOMMENDATION **/
+    .recommendation {
+        height: 45vh;
+        aside {
+            @include displayCenter;
+        }
+        [type="submit"] {
+            width: 50%;
+          }
+    }
+
+    /** TAG **/
+    .tag {
+        a:hover {
+            color: whitesmoke;
+            background-color: $secondColor;
+        }
+    }
+    
+    input {
+        padding: 4%;
+    }
+
+    /** FOOTER **/
+    footer {
+        p {
+            font-size: 22px;
+        }
+
+        a:hover {
+            background: $secondColor;
+            color: $mainColor;
+            border-color: $mainColor;
+        }
+    }
+    
+    }
